@@ -266,13 +266,57 @@ i {
 */
 
 
-@media screen and (max-width: 750px){
 
-  header{
-    background-image: url('./images/mobile/image-header.jpg');
+@media screen and (max-width: 1440px){
+
+  body {
+    display: flex; 
+    justify-content: center; 
   }
 
+  .main-container {
+    width: 375px;
+  }
+
+  header {
+    background-image: url('./images/mobile/image-header.jpg');
+    width: 375px; 
+    height: 538px;
+    object-fit: cover;
+    background-position: center;
+    padding: 20px; 
+  }
+
+  header .text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2em;
+    letter-spacing: 11px;
+  }
+
+  /*  ------ info section ----------------------------- */ 
+
+  .info .image-t img, .image-b img {
+    width: 375px;
+    height: 312px; 
+  }
+
+
 }
+
 
 
 /*
