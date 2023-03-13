@@ -2,3 +2,4 @@ Achtergrond kleur  footer :  87cdbd / 90d4c5
 
 kleur letters  : moderate cyan 
 
+background-size: cover 
