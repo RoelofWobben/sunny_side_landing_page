@@ -1,5 +1,8 @@
-Achtergrond kleur  footer :  87cdbd / 90d4c5
 
-kleur letters  : moderate cyan 
+- projects plaatjes aanpassen 
+- menu footer donkere kleur 
 
-background-size: cover 
+
+- hamburger menu maken 
+
+
