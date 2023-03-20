@@ -1,8 +1,16 @@
 
-- projects plaatjes aanpassen 
-- menu footer donkere kleur 
+- menu aanpassen 
+  - positie 
+  - kleur links
+  - grootte links
+  - padding links 
+  - button 
 
+- animaties langzaam terug zetten 
 
-- hamburger menu maken 
+  - overlay 
+  - menu layer 
+
+  
 
 

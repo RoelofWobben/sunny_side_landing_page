@@ -22,14 +22,18 @@
                     <div class="logo">
                         <img src="./images/logo.svg">
                     </div>
-                    <div class="menu-1 hamburger">
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li> <button class="btn"><p>CONTACT</p></button></li>
-                        </ul>
-                    </div>    
+                    <div class="menu-wrap">
+                        <input type="checkbox" class="toggler">
+                        <div class="hamburger"><div></div></div>
+                        <div class="menu-1">
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li> <button class="btn"><p>CONTACT</p></button></li>
+                            </ul>
+                        </div> 
+                    </div>   
                 </div>
                 <div class="text">
                     <h1>WE ARE CREATIVES</h1>
@@ -128,28 +132,40 @@
                 </div>
             <!-- PROJECTS -->                 
                 <div class="projects"  id="projects">
-                    <div class="project">
-                        <div class="1">
-                            <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-milkbottles.jpg" >
-                            <img src="./images/desktop/image-gallery-milkbottles.jpg">
+                    <div class="top">
+                        <div class="project">
+                            <div class="1">
+                                <picture>
+                                    <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-milkbottles.jpg" >
+                                    <img src="./images/desktop/image-gallery-milkbottles.jpg">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="2">
+                                <picture>
+                                    <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-orange.jpg" >
+                                    <img src="./images/desktop/image-gallery-orange.jpg" >
+                                </picture>
+                            </div>
                         </div>
                     </div>
-                    <div class="project">
-                        <div class="2">
-                            <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-orange.jpg" >
-                            <img src="./images/desktop/image-gallery-orange.jpg" >
+                    <div class="bottom">
+                         <div class="project">
+                            <div class="3">
+                                <picture>
+                                    <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-cone.jpg" >
+                                    <img src="./images/desktop/image-gallery-cone.jpg">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="3">
-                            <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-cone.jpg" >
-                            <img src="./images/desktop/image-gallery-cone.jpg">
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="4">
-                            <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
-                            <img src="./images/desktop/image-gallery-sugarcubes.jpg">
+                        <div class="project">
+                            <div class="4">
+                                <picture>
+                                    <source media="(max-width:1440px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+                                    <img src="./images/desktop/image-gallery-sugarcubes.jpg">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
