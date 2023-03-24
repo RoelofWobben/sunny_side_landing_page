@@ -1,15 +1,8 @@
 
-- menu aanpassen 
-  - positie 
-  - kleur links
-  - grootte links
-  - padding links 
-  - button 
+-- links  desktop 
 
-- animaties langzaam terug zetten 
+-- uitzoeken waarom  de tekst naar onderen wordt gedrukt.
 
-  - overlay 
-  - menu layer 
 
   
 

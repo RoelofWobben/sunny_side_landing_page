@@ -23,6 +23,7 @@
   --grayish_blue: hsl(210, 4%, 67%); 
   --white: hsl(0, 0%, 100%); 
   --white_button: hsla(0, 0%, 100%, 0.6);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
 
   --fraunces: 'Fraunces', sans-serif;
   --barlow: 'Barlow', sans-serif;
@@ -98,8 +99,6 @@ header .text {
   font-family: 'Fraunches', sans-serif;
   font-weight: 900;
   margin-bottom: 40px;
-  text-decoration: underline; 
-  text-decoration-thickness: 5px;
 }
 
 .url :hover {
@@ -109,10 +108,6 @@ header .text {
 
 /* ---------------- info --------------------*/
 
-
-.transform {
-  text-decoration: underline var(--yellow-a) 10px;
-}
 
 .standout {
   text-decoration-color: var(--soft_red-a);
@@ -325,7 +320,7 @@ i {
   .menu-wrap {
     position: relative;
     top: -15px;
-    left: 160px;
+    left: 170px;
   }
 
   .menu-wrap .toggler {
@@ -377,6 +372,7 @@ i {
   background: inherit;
 }
 
+
 .menu-wrap .hamburger > div::after {
   top: 10px;
 }
@@ -392,25 +388,74 @@ i {
   transform: rotate(90deg);
 }
 
+.menu-wrap .toggler:checked ~ .overlay {
+  transform: scale(1);
+  transition-duration: .5s;
+}
+
 .menu-wrap .toggler:checked ~ .menu-1 {
   visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu_overlay {
+  opacity: 1;
+  transition:  opacity 0.4s ease 1s;
 }
 
 .menu-wrap .menu-1 {
   position: relative;
   top: 50px;
-  right: 285px;
+  right: 300px;
   width: 340px;
   height: 100%;
   visibility: hidden;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background: white;
 }
 
-  
+.menu-wrap .menu-1:after {
+  content: ""; 
+  position: absolute;
+  top: 0; 
+  left: 50%; 
+  width:0; 
+  height: 20; 
+  border: 30px solid transparent; 
+  border-bottom-color: white; 
+  border-top: 0; 
+  border-right: 0; 
+  margin-left: 140px; 
+  margin-top: -30px;
+} 
+
+.menu_overlay > ul > li {
+  list-style: none;
+  color: var(--grayish_blue); 
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center; 
+}
+
+.menu_overlay > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.btn {
+  background-color: var(--yellow);
+  border: none; 
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  padding-left: 30px; 
+  padding-right: 30px;
+  font-weight: 700;
+  font-family: var(--fraunces);
+  font-size: 1rem;
+  border-radius: 40px;      
+}
 
   
 
@@ -432,31 +477,54 @@ i {
   }
 
   .url {
-    width: 100%;
-    display: block;
-    color: black;
-    font-family: 'Fraunches', sans-serif;
-    font-size: 16px; 
-    font-weight: 900;
-    margin-bottom: 40px;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-}
+    font-size: 1rem; 
+    text-decoration: none; 
+    font-family: var(--fraunces);
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  .transform:after {
+    content: ""; 
+    position: absolute; 
+    height: 0.8rem; 
+    left: 90px; 
+    right: -10px; 
+    top: 60%;
+    width: 150px;  
+    background-color: var(--yellow);
+    border-radius: 100px; 
+    z-index: -1; 
+  }
+
+  .transform:hover::after{
+    background-color: var(--yellow-a); 
+  }
+
+  .standout:after {
+    content: ""; 
+    position: absolute; 
+    height: 0.8rem; 
+    left: 96px; 
+    right: -10px; 
+    top: 60%;
+    width: 140px;  
+    background-color: var(--soft_red);
+    border-radius: 100px; 
+    z-index: -1; 
+  }
+
+  .standout:hover::after {
+    background-color: var(--soft_red-a); 
+  }
+  
 
   .info .image-t img, .image-b img {
     width: 375px;
     height: 312px; 
   }
 
-  .transform {
-    text-decoration: underline var(--yellow-a) 10px;
-  }
-
-
-  .standout {
-    text-decoration-color: var(--soft_red-a);
-  }
-
+  
   /*  ----- services section --------------------------- */ 
 
   .design, .photography {
@@ -715,6 +783,7 @@ i {
     width: 720px;
     height: 600px;
     padding: 150px 102px 150px 170px;
+    display: block; 
   }
 
   .info .top .text {    
@@ -855,5 +924,4 @@ i {
 /* ---------------- FOOTER --------------------*/
 
 }  
-
 
